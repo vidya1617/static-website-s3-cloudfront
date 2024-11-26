@@ -1,0 +1,27 @@
+{
+    "Version": "2012-10-17",
+    "Id": "PolicyForCloudFront",
+    "Statement": [
+        {
+            "Sid": "AllowCloudFrontAccess",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "cloudfront.amazonaws.com"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::my-source-bucket9876/*",
+            "Condition": {
+                "StringEquals": {
+                    "AWS:SourceArn": "arn:aws:cloudfront::941377137570:distribution/ESXLAACZ0ZOZ0"
+                }
+            }
+        },
+        {
+            "Sid": "PublicReadAccess",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::my-source-bucket9876/*"
+        }
+    ]
+}
