@@ -42,15 +42,15 @@ Here are the screenshots showing the project's implementation:
    ![S3 Bucket](Images/destination-bucket.png)
    ![S3 Bucket](Images/enable-static-website-hosting.png)
 
-3. **SRR Configuration**  
+2. **SRR Configuration**  
    ![SRR Setup](Images/s3-policy.txt)
    ![SRR Setup](Images/replication-rule.png)
    ![Replication](Images/replication.png)
 
-5. **CloudFront Distribution**  
+3. **CloudFront Distribution**  
    ![CloudFront Distribution](Images/cloudfront.png)
 
-6. **Website Hosting**  
+4. **Website Hosting**  
    Access the website using CloudFront:  
    ![Website Hosting](Images/static-website-hosting.png)
    ![Website Hosting](Images/static-website-hosting-with-cloudfront.png)
